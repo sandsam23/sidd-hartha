@@ -4,6 +4,16 @@ html {
    scroll-behavior: smooth;
 }
 
+* {
+   box-sizing: border-box;
+   font-family: "IBM", monospace;
+   font-weight: 300;
+   font-style: normal;
+   /* vw skale by resolution */
+   font-size: calc(1rem + 0.4vw);
+   line-height: 3ch;
+}
+
 /*ANCHOR - Variablen */
 
 body {
@@ -25,13 +35,6 @@ body {
 body {
    padding: 0;
    margin: 0;
-   box-sizing: border-box;
-   font-family: "IBM", monospace;
-   font-weight: 300;
-   font-style: normal;
-   /* vw skale by resolution */
-   font-size: calc(1rem + 0.4vw);
-   line-height: 3ch;
    background-color: #191919;
    color: #636363;
 }
