@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+---
+
+<Layout>
+   <h2>Circleway</h2>
+   <h3>Der Weg des Kreises</h3>
+   <p>
+      Hier möchte ich zeigen was der Weg des Kreises sein
+      kann. Vorab einen Link als
+      <a
+         href="https://iv.ggtyler.dev/channel/UC4LGq266LhtoEatiBOmDnuw"
+         target="_blank"
+         class="link-red">[Inspirationsquelle].</a
+      ><br />
+      Drei Interviews haben mich spontan angesprochen.<br />
+   </p>
+   <div class="cardContainer">
+      <Card
+         url1="/images/brett_2.webp"
+         url2="https://iv.ggtyler.dev/watch?v=XdcMGxnvoCM"
+         title1="Roman Huber"
+         title2="Leadership"
+         title3="Film"
+         external={true}
+         title4="Mo 29.Januar 2024"
+      />
+      <Card
+         url1="/images/brett_2.webp"
+         url2="https://iv.ggtyler.dev/watch?v=NNjvoyXeTcY"
+         title1="Stefan Mandel"
+         title2="Der Weg des Kreises"
+         title3="Film"
+         external={true}
+         title4="Mo 29.Januar 2024"
+      />
+      <Card
+         url1="/images/brett_2.webp"
+         url2="https://www.youtube.com/watch?v=u9eHZ7J0EUQ"
+         title1="Clinton Callahan"
+         title2="Kontext"
+         title3="Film"
+         external={true}
+         title4="Mo 29.Januar 2024"
+      />
+   </div>
+</Layout>

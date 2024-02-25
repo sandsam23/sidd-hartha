@@ -1,0 +1,72 @@
+---
+import NavLink from "./NavLink.astro";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.split("/");
+export interface Props {
+   url1?: string;
+   url2?: string;
+   url3?: string;
+   url4?: string;
+   url5?: string;
+   title1?: string;
+   title2?: string;
+   title3?: string;
+   title4?: string;
+   title5?: string;
+   class1?: string;
+   class2?: string;
+   class3?: string;
+   class4?: string;
+   class5?: string;
+   // ? bedeutet, dass die Prop optional ist. external=öffnen in neuem Tab.
+   external?: boolean;
+}
+
+const { url1, url2, url3, url4, url5, title1, title2, title3, title4, title5, class1, class2, class3, class4, class5, external } = Astro.props;
+---
+
+<li class={class1}>
+   <NavLink
+      title={title1}
+      url={url1}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      currentpath={currentPath[1]}
+   />
+</li>
+<li class={class2}>
+   <NavLink
+      title={title2}
+      url={url2}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      currentpath={currentPath[1]}
+   />
+</li>
+<li class={class3}>
+   <NavLink
+      title={title3}
+      url={url3}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      currentpath={currentPath[1]}
+   />
+</li>
+<li class={class4}>
+   <NavLink
+      title={title4}
+      url={url4}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      currentpath={currentPath[1]}
+   />
+</li>
+<li class={class5}>
+   <NavLink
+      title={title5}
+      url={url5}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      currentpath={currentPath[1]}
+   />
+</li>

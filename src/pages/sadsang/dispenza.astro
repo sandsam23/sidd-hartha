@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+---
+
+<Layout>
+   <h2>Dr. Joe Dispenza</h2>
+   <h3>Inspirationen</h3>
+   <div class="cardContainer">
+      <Card
+         url1="/images/brett_2.webp"
+         url2="https://www.youtube.com/watch?v=XdUxnThOfjc"
+         title1="Meditation"
+         title2="Golov-20"
+         title3="Film"
+         external={true}
+         title4="Mo 19.Februar 2024"
+      />
+      <Card
+         url1="/images/brett_2.webp"
+         url2="/audio/di_insp.mp3"
+         title1="Meditation"
+         title2="Inspiration"
+         title3="Audio"
+         external={true}
+         title4="Mo 19.Februar 2024"
+      />
+   </div>
+</Layout>

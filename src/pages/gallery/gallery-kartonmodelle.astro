@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+---
+
+<Layout>
+   <h2>Kartonmodelle</h2>
+   <p>
+      2017 habe ich mich einem Forum im Internet angeschlossen. Der folgende Link kann einen Eindruck von diesem Hobby vermitteln.
+      <span
+         ><a href="https://www.die-kartonmodellbauer.de/forum/index.php?thread/4644-harrys-modelle/" target="_blank" class="link-red">[Kartonmodellbau-Forum]</a
+         ></span
+      >
+      Weil Ihr nicht angemeldet seid könnt Ihr nur die Seite scrollen, also Euch nicht im Forum bewegen. Zwei Projekte möchte ich noch bauen. Beide Modellbögen habe
+      ich in doppelter Ausführung hier liegen. Einmal den BMW-M3-GTR und den Ferrari 312b. Beide Bau-Projekte habe ich mal abgebrochen. Es gibt Bilder im Forum.
+   </p>
+   <div class="cardContainer">
+      <Card
+         url1="/images/f312b/50-F312b.jpg"
+         url2="/gallery/gallery-motor"
+         title1="Motor"
+         title2="Für Ferrari 312b"
+         title3="mehr"
+         external={false}
+         title4="Sa 27.Januar 2024"
+      />
+      <Card
+         url1="/images/matra/04_ma.webp"
+         url2="/gallery/gallery-matra"
+         title1="Matra MS80"
+         title2="Spanien GP 1969"
+         title3="mehr"
+         external={false}
+         title4="Mo 01.Januar 2024"
+      />
+      <Card
+         url1="/images/hesketh/01_hesk.webp"
+         url2="/gallery/gallery-hesketh"
+         title1="Hesketh 308B"
+         title2="Östereich GP 1975"
+         title3="mehr"
+         external={false}
+         title4="Mo 01.Januar 2024"
+      />
+   </div>
+</Layout>

@@ -1,0 +1,11 @@
+---
+export interface Props {
+   url?: string;
+   // ? bedeutet, dass die Prop optional ist. external=öffnen in neuem Tab.
+   external?: boolean;
+}
+
+const { url, external } = Astro.props;
+---
+
+<img class="seiten-img" src={url} />

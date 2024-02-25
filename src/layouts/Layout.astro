@@ -1,0 +1,54 @@
+---
+import NavLinks from "../components/NavLinks.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/farben.css";
+import "../styles/font.css";
+import "../styles/style.css";
+---
+
+<!doctype html>
+<html lang="de">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width,initial-scale=1.0"
+      />
+      <title>wald-boden</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <NavLinks
+                  url1=""
+                  title1="Finden"
+                  class1="link-blue"
+                  url2="hobby"
+                  title2="Tun"
+                  class2="link-blue"
+                  url3="sadsang"
+                  title3="Sein"
+                  class3="link-blue"
+                  url4="gallery"
+                  title4="Gallery"
+                  class4="link-blue"
+               />
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <slot />
+      </main>
+      <footer>
+         <Footer
+            url1="#"
+            title1="[Hoch]"
+            external={false}
+            url2="mailto:padra@mailbox.org"
+            title2="[padra@mailbox.org]"
+            external={true}
+         />
+      </footer>
+   </body>
+</html>

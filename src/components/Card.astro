@@ -1,0 +1,29 @@
+---
+export interface Props {
+   url1?: string;
+   url2?: string;
+   title1?: string;
+   title2?: string;
+   title3?: string;
+   title4?: string;
+   style?: string;
+   // ? bedeutet, dass die Prop optional ist. external=öffnen in neuem Tab.
+   external?: boolean;
+}
+
+const { url1, url2, title1, title2, title3, title4, style, external } = Astro.props;
+---
+
+<!-- willst du mehr als eine card mußt du diese in einen cardContainer tun
+die Class gibt es in css -->
+<div style={style} class="card">
+   <div class="bild"><img src={url1} /></div>
+   <div class="content">
+      <div class="titel">{title1}</div>
+      <div class="beschreibung">{title2}</div>
+      <div class="button">
+         <a href={url2} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>{title3}</a>
+      </div>
+      <div class="datum">{title4}</div>
+   </div>
+</div>
