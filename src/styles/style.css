@@ -44,28 +44,24 @@ body::-webkit-scrollbar {
 
 aside {
    display: flex;
+   flex: 1;
    width: 440px;
 }
 
 #links {
    justify-content: center;
-   position: fixed;
-   top: 200px;
 }
 
 #rechts {
    justify-content: center;
-   position: fixed;
-   top: 200px;
-   right: 0px;
 }
 
-@media screen and (max-width: 1250px) {
+/* @media screen and (max-width: 1250px) {
    #links,
    #rechts {
       display: none;
    }
-}
+} */
 
 /*ANCHOR - Header */
 
@@ -87,6 +83,11 @@ nav > ul {
 }
 
 /*ANCHOR - Main */
+
+#container {
+   display: flex;
+   flex-flow: row wrap;
+}
 
 main {
    width: 100%;
