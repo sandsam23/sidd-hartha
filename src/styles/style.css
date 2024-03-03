@@ -38,6 +38,10 @@ body {
    color: #636363;
 }
 
+body::-webkit-scrollbar {
+   display: none;
+}
+
 /*ANCHOR - Header */
 
 header {

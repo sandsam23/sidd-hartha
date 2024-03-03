@@ -38,6 +38,10 @@ body {
    color: #636363;
 }
 
+body::-webkit-scrollbar {
+   display: none;
+}
+
 /*ANCHOR - Wrapper */
 
 .wrapper {
@@ -67,10 +71,7 @@ body {
 .haupt {
    display: grid;
    gap: 20px;
-   grid-template-columns: repeat(
-      auto-fill,
-      minmax(300px, 1fr)
-   );
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 @media all and (min-width: 800px) {
