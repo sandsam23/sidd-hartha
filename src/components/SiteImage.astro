@@ -8,4 +8,9 @@ export interface Props {
 const { url, external } = Astro.props;
 ---
 
-<img class="seiten-img" src={url} />
+<a
+   href={url}
+   target={external ? "_blank" : undefined}
+   rel={external ? "noopener noreferrer" : undefined}
+   ><img class="seiten-img" src={url} /></a
+>
