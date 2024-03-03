@@ -61,19 +61,19 @@ nav > ul {
 
 /*ANCHOR - Main */
 
-#container {
+main {
    display: flex;
    flex-flow: row wrap;
 }
 
-main {
+#mitte {
    width: 100%;
    max-width: 1040px;
    padding: 20px;
    margin: 0 auto;
 }
 
-main a {
+#mitte a {
    font-size: calc(0.9rem + 0.4vw);
 }
 
