@@ -40,29 +40,6 @@ body::-webkit-scrollbar {
    display: none;
 }
 
-/*ANCHOR - Aside */
-
-aside {
-   display: flex;
-   flex: 1;
-   width: 440px;
-}
-
-#links {
-   justify-content: center;
-}
-
-#rechts {
-   justify-content: center;
-}
-
-/* @media screen and (max-width: 1250px) {
-   #links,
-   #rechts {
-      display: none;
-   }
-} */
-
 /*ANCHOR - Header */
 
 header {
@@ -98,6 +75,22 @@ main {
 
 main a {
    font-size: calc(0.9rem + 0.4vw);
+}
+
+/*ANCHOR - Main-Aside */
+
+aside {
+   display: flex;
+   flex: 1;
+   width: 440px;
+}
+
+#links {
+   justify-content: center;
+}
+
+#rechts {
+   justify-content: center;
 }
 
 h1 {
