@@ -66,6 +66,15 @@ main {
    flex-flow: row wrap;
 }
 
+aside {
+   display: flex;
+   flex: 1;
+}
+
+#links {
+   justify-content: center;
+}
+
 #mitte {
    width: 100%;
    max-width: 1040px;
@@ -75,18 +84,6 @@ main {
 
 #mitte a {
    font-size: calc(0.9rem + 0.4vw);
-}
-
-/*ANCHOR - Main-Aside */
-
-aside {
-   display: flex;
-   flex: 1;
-   width: 440px;
-}
-
-#links {
-   justify-content: center;
 }
 
 #rechts {
