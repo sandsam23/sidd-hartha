@@ -1,0 +1,20 @@
+---
+export interface Props {
+   url?: string;
+   title?: string;
+   // ? bedeutet, dass die Prop optional ist. external=öffnen in neuem Tab.
+   external?: boolean;
+}
+
+const { url, title, external } = Astro.props;
+---
+
+<div class="cardtext w-[300px] h-[340px] absolute top-[200px]">
+   <p>
+      "Gott wird helfen,<br />so der Mensch daran glaubt,<br />so er den guten,<br
+      />den göttlichen Willen hat,<br />in dem zu leben er ja bestimmt ist,<br
+      />und so er den Glauben an Gott nicht verliert,<br />und Gott hilft ihm,<br
+      />glaube er nur!"<br /><br />
+      <i>(Bruno Gröning)</i>
+   </p>
+</div>
