@@ -40,6 +40,33 @@ body::-webkit-scrollbar {
    display: none;
 }
 
+/*ANCHOR - Aside */
+
+aside {
+   display: flex;
+   width: 440px;
+}
+
+#links {
+   justify-content: center;
+   position: fixed;
+   top: 200px;
+}
+
+#rechts {
+   justify-content: center;
+   position: fixed;
+   top: 200px;
+   right: 0px;
+}
+
+@media screen and (max-width: 1250px) {
+   #links,
+   #rechts {
+      display: none;
+   }
+}
+
 /*ANCHOR - Header */
 
 header {
@@ -62,32 +89,14 @@ nav > ul {
 /*ANCHOR - Main */
 
 main {
-   display: flex;
-   flex-flow: row wrap;
-}
-
-aside {
-   display: flex;
-   flex: 1;
-}
-
-#links {
-   justify-content: center;
-}
-
-#mitte {
    width: 100%;
    max-width: 1040px;
    padding: 20px;
    margin: 0 auto;
 }
 
-#mitte a {
+main a {
    font-size: calc(0.9rem + 0.4vw);
-}
-
-#rechts {
-   justify-content: center;
 }
 
 h1 {
