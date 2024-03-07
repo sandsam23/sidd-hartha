@@ -1,16 +1,17 @@
 ---
 export interface Props {
    url?: string;
+   style?: string;
    // ? bedeutet, dass die Prop optional ist. external=öffnen in neuem Tab.
    external?: boolean;
 }
 
-const { url, external } = Astro.props;
+const { url, style, external } = Astro.props;
 ---
 
 <a
    href={url}
    target={external ? "_blank" : undefined}
    rel={external ? "noopener noreferrer" : undefined}
-   ><img class="seiten-img" src={url} /></a
+   ><img style={style} class="seiten-img" src={url} /></a
 >
