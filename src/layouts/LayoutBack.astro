@@ -22,14 +22,14 @@ const { url, title, external } = Astro.props;
       <title>baum-blatt</title>
    </head>
    <body>
-      <header>
+      <header class="bg-slate-700">
          <nav>
             <ul>
                <NavLinks url1={url} title1={title} class1="link-blue" />
             </ul>
          </nav>
       </header>
-      <main>
+      <main class="bg-red-950">
          <slot />
       </main>
       <footer>
