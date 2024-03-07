@@ -3,27 +3,29 @@ import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 ---
 
-<Layout>
-   <h2>Foto Kamera</h2>
-   <p>
-      Hier werde ich <span style="color: #af9e87;"
-         >Fotos von meiner Olympus OM2n</span
-      > reinstellen. Einfach weil diese selbst sehr sehr schön ist. Für die Fotos
-      die ich damit fotografiert habe werde ich in der Gallery noch ein separates
-      Kapitel erstellen.<br />
-      <a href="/gallery/gallery-analoge-fotografie" class="link-red"
-         >[Analoge Fotografie]</a
-      >
-      <div class="cardContainer">
-         <Card
-            url1="/images/timan-1.webp"
-            url2="/gallery/gallery-werkstattbilder"
-            title1="Werkstattbilder"
-            title2="Frank Timmann"
-            title3="mehr"
-            external={false}
-            title4="Mo 02.Januar 2024"
-         />
-      </div>
-   </p>
-</Layout>
+<main class="w-full max-w-[1040px] p-[20px] my-0 mx-auto">
+   <Layout>
+      <h2>Foto Kamera</h2>
+      <p>
+         Hier werde ich <span style="color: #af9e87;"
+            >Fotos von meiner Olympus OM2n</span
+         > reinstellen. Einfach weil diese selbst sehr sehr schön ist. Für die Fotos
+         die ich damit fotografiert habe werde ich in der Gallery noch ein separates
+         Kapitel erstellen.<br />
+         <a href="/gallery/gallery-analoge-fotografie" class="link-red"
+            >[Analoge Fotografie]</a
+         >
+         <div class="cardContainer">
+            <Card
+               url1="/images/timan-1.webp"
+               url2="/gallery/gallery-werkstattbilder"
+               title1="Werkstattbilder"
+               title2="Frank Timmann"
+               title3="mehr"
+               external={false}
+               title4="Mo 02.Januar 2024"
+            />
+         </div>
+      </p>
+   </Layout>
+</main>

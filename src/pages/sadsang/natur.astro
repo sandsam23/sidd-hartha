@@ -3,36 +3,38 @@ import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 ---
 
-<Layout>
-   <h2>Natur</h2>
-   <h3>Der Mensch als Teil des Lebens</h3>
-   <div class="cardContainer">
-      <Card
-         url1="/images/brett_2.webp"
-         url2="https://www.youtube.com/watch?v=eLAEKn3uG2E&t=0s"
-         title1="Dr. Michael Nehls"
-         title2="Vitamin D"
-         title3="Film"
-         external={true}
-         title4="Mi 14.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="/sadsang/cdl"
-         title1="Dr. Andreas Kalcker"
-         title2="CDL"
-         title3="mehr"
-         external={true}
-         title4="Mi 14.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="/sadsang/bielau"
-         title1="Dr. Klaus Bielau"
-         title2="Ganzheitliche Medizin"
-         title3="mehr"
-         external={true}
-         title4="Mi 14.Februar 2024"
-      />
-   </div>
-</Layout>
+<main class="w-full max-w-[1040px] p-[20px] my-0 mx-auto">
+   <Layout>
+      <h2>Natur</h2>
+      <h3>Der Mensch als Teil des Lebens</h3>
+      <div class="cardContainer">
+         <Card
+            url1="/images/brett_2.webp"
+            url2="https://www.youtube.com/watch?v=eLAEKn3uG2E&t=0s"
+            title1="Dr. Michael Nehls"
+            title2="Vitamin D"
+            title3="Film"
+            external={true}
+            title4="Mi 14.Februar 2024"
+         />
+         <Card
+            url1="/images/brett_2.webp"
+            url2="/sadsang/cdl"
+            title1="Dr. Andreas Kalcker"
+            title2="CDL"
+            title3="mehr"
+            external={true}
+            title4="Mi 14.Februar 2024"
+         />
+         <Card
+            url1="/images/brett_2.webp"
+            url2="/sadsang/bielau"
+            title1="Dr. Klaus Bielau"
+            title2="Ganzheitliche Medizin"
+            title3="mehr"
+            external={true}
+            title4="Mi 14.Februar 2024"
+         />
+      </div>
+   </Layout>
+</main>
