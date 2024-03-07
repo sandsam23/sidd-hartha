@@ -5,97 +5,103 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout>
-   <SiteImage url="/images/buddha.webp" />
-   <div class="cardContainer">
-      <Card
-         url1="/images/brett_2.webp"
-         url2="https://youtu.be/sWpQ8nyoPeU"
-         title1="Gangaji & Eli Jaxon-Bear"
-         title2="Es ist möglich, für jeden"
-         title3="Film"
-         external={true}
-         title4="Mi 28.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="https://youtu.be/YJvlnY29PZo"
-         title1="Papaji"
-         title2="Es ist so einfach..."
-         title3="Film"
-         external={true}
-         title4="Mi 28.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="https://mooji.org/satsangs/the-purest-truth"
-         title1="Mooji"
-         title2="Vor diesem 'Ich existiere'-Gefühl bin ich"
-         title3="Film"
-         external={true}
-         title4="Mo 26.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../sadsang/dispenza"
-         title1="Dr. Joe Dispenza"
-         title2="Inspirationen"
-         title3="mehr"
-         external={false}
-         title4="Mo 19.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../sadsang/natur"
-         title1="Natur"
-         title2="Inspirierndes"
-         title3="mehr"
-         external={false}
-         title4="Mi 14.Februar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../sadsang/circleway"
-         title1="Circleway"
-         title2="Inspirierndes"
-         title3="mehr"
-         external={false}
-         title4="So 28.Januar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="https://www.youtube.com/watch?v=AbgHfU7iG-M"
-         title1="Jai Uttal"
-         title2="Ram Ram Ram"
-         title3="Film"
-         external={true}
-         title4="Mo 01.Januar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="https://www.youtube.com/watch?v=O4EpkmNCAiA"
-         title1="Krishna Das"
-         title2="Peace of my Heart"
-         title3="Film"
-         external={true}
-         title4="Mo 01.Januar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../sadsang/before"
-         title1="You are here before"
-         title2="Stell dir vor du kommst in einen Raum"
-         title3="mehr"
-         external={false}
-         title4="Mo 01.Januar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="/sadsang/zeig-mir-gott"
-         title1="Zeige mir Gott"
-         title2="In diesem Film fragt ein Mann"
-         title3="mehr"
-         external={false}
-         title4="Mo 01.Januar 2024"
-      />
+   <div class="wrapper">
+      <aside class="links"></aside>
+      <section class="mitte">
+         <SiteImage url="/images/buddha.webp" />
+         <div class="cardContainer">
+            <Card
+               url1="/images/brett_2.webp"
+               url2="https://youtu.be/sWpQ8nyoPeU"
+               title1="Gangaji & Eli Jaxon-Bear"
+               title2="Es ist möglich, für jeden"
+               title3="Film"
+               external={true}
+               title4="Mi 28.Februar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="https://youtu.be/YJvlnY29PZo"
+               title1="Papaji"
+               title2="Es ist so einfach..."
+               title3="Film"
+               external={true}
+               title4="Mi 28.Februar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="https://mooji.org/satsangs/the-purest-truth"
+               title1="Mooji"
+               title2="Vor diesem 'Ich existiere'-Gefühl bin ich"
+               title3="Film"
+               external={true}
+               title4="Mo 26.Februar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../sadsang/dispenza"
+               title1="Dr. Joe Dispenza"
+               title2="Inspirationen"
+               title3="mehr"
+               external={false}
+               title4="Mo 19.Februar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../sadsang/natur"
+               title1="Natur"
+               title2="Inspirierndes"
+               title3="mehr"
+               external={false}
+               title4="Mi 14.Februar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../sadsang/circleway"
+               title1="Circleway"
+               title2="Inspirierndes"
+               title3="mehr"
+               external={false}
+               title4="So 28.Januar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="https://www.youtube.com/watch?v=AbgHfU7iG-M"
+               title1="Jai Uttal"
+               title2="Ram Ram Ram"
+               title3="Film"
+               external={true}
+               title4="Mo 01.Januar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="https://www.youtube.com/watch?v=O4EpkmNCAiA"
+               title1="Krishna Das"
+               title2="Peace of my Heart"
+               title3="Film"
+               external={true}
+               title4="Mo 01.Januar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../sadsang/before"
+               title1="You are here before"
+               title2="Stell dir vor du kommst in einen Raum"
+               title3="mehr"
+               external={false}
+               title4="Mo 01.Januar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="/sadsang/zeig-mir-gott"
+               title1="Zeige mir Gott"
+               title2="In diesem Film fragt ein Mann"
+               title3="mehr"
+               external={false}
+               title4="Mo 01.Januar 2024"
+            />
+         </div>
+      </section>
+      <aside class="rechts"></aside>
    </div>
 </Layout>

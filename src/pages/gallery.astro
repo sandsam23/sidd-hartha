@@ -5,34 +5,40 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout>
-   <SiteImage url="/images/children-2.webp" />
-   <div class="cardContainer">
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../gallery/gallery-analoge-fotografie"
-         title1="Analoge Fotografie"
-         title2="Mit der Olympus OM2n"
-         title3="mehr"
-         external={false}
-         title4="Mo 08.Januar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../gallery/gallery-kartonmodelle"
-         title1="Kartonmodelle"
-         title2="Forum im Internet"
-         title3="mehr"
-         external={false}
-         title4="Mo 01.Januar 2024"
-      />
-      <Card
-         url1="/images/brett_2.webp"
-         url2="../gallery/gallery-foto-kamera"
-         title1="Foto Kamera"
-         title2="Olympus OM2n"
-         title3="mehr"
-         external={false}
-         title4="Mo 01.Januar 2024"
-      />
+   <div class="wrapper">
+      <aside class="links"></aside>
+      <section class="mitte">
+         <SiteImage url="/images/children-2.webp" />
+         <div class="cardContainer">
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../gallery/gallery-analoge-fotografie"
+               title1="Analoge Fotografie"
+               title2="Mit der Olympus OM2n"
+               title3="mehr"
+               external={false}
+               title4="Mo 08.Januar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../gallery/gallery-kartonmodelle"
+               title1="Kartonmodelle"
+               title2="Forum im Internet"
+               title3="mehr"
+               external={false}
+               title4="Mo 01.Januar 2024"
+            />
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../gallery/gallery-foto-kamera"
+               title1="Foto Kamera"
+               title2="Olympus OM2n"
+               title3="mehr"
+               external={false}
+               title4="Mo 01.Januar 2024"
+            />
+         </div>
+      </section>
+      <aside class="rechts"></aside>
    </div>
 </Layout>
