@@ -7,20 +7,28 @@ import Card from "../components/Card.astro";
 <Layout>
    <div class="wrapper">
       <aside class="links">
-         <div class="cardtext">
+         <div class="cardtext absolute top-[107px] w-[300px] h-[320px]">
             <p>
                "Gott wird helfen,<br />so der Mensch daran glaubt,<br />so er
                den guten,<br />den göttlichen Willen hat,<br />in dem zu leben
                er ja bestimmt ist,<br />und so er den Glauben an Gott nicht
-               verliert,<br />und Gott hilft ihm,<br />glaube er nur!"<br /><br
-               />
-               <i>(Bruno Gröning)</i>
+               verliert,<br />und Gott hilft ihm,<br />glaube er nur!"<br />
+               <i class="text-[14px]">(Bruno Gröning)</i>
             </p>
          </div>
       </aside>
       <section class="mitte">
          <SiteImage url="/images/buddha.webp" />
          <div class="cardContainer">
+            <Card
+               url1="/images/brett_2.webp"
+               url2="../sadsang/krishnamurti"
+               title1="Krishnamurti"
+               title2="Beenden des Leids"
+               title3="mehr"
+               external={false}
+               title4="Fr 8.März 2024"
+            />
             <Card
                url1="/images/brett_2.webp"
                url2="https://youtu.be/sWpQ8nyoPeU"
@@ -113,6 +121,21 @@ import Card from "../components/Card.astro";
             />
          </div>
       </section>
-      <aside class="rechts"></aside>
+      <aside class="rechts">
+         <div class="cardtext absolute top-[107px] w-[315px] h-[670px]">
+            <p>
+               Dieser Gesprächs-Auszug behandelt das unbewußte Fehlverhalten des
+               Verstandes, nervös und rastlos zu werden, wenn im Außen die Dinge
+               ruhig und harmlos sind und nichts Interessantes passiert, weshalb
+               er unbewußt Widerstand aufbaut und dadurch unfähig wird, die
+               Schönheit dieses Momentes zu genießen und zuzulassen.
+               <br /> Dieser Rastlosigkeit des Verstandes Aufmerksamkeit zu schenken,
+               bei ihr zu verweilen und sie mit unschuldiger Neugier und Interesse
+               zu beobachten statt dem Impuls nachzugeben und vor ihr durch Drogen,
+               Unterhaltung oder Arbeit zu fliehen, ist der Schlüssel zur Beendung
+               des Leids.<br /><i class="text-[14px]">(Krishnamurti)</i>
+            </p>
+         </div>
+      </aside>
    </div>
 </Layout>
