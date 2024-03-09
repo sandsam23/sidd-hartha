@@ -64,13 +64,6 @@ nav > ul {
 
 /*ANCHOR - Main */
 
-/* main {
-   width: 100%;
-   max-width: 1040px;
-   padding: 20px;
-   margin: 0 auto;
-} */
-
 main a {
    font-size: calc(0.9rem + 0.4vw);
 }
@@ -251,18 +244,7 @@ p {
    color: #636363;
 }
 
-/* NullFotoCard Componente*/
-.nfc {
-   margin: auto;
-}
-
-.nfc img {
-   padding: 20px 0px;
-   height: 300px;
-}
-
 .cardtext {
-   margin: 4px;
    border: solid 1px #af9e87;
    border-radius: 8px;
    color: #af9e87;
@@ -270,7 +252,7 @@ p {
 }
 
 .cardtext p {
-   padding: 10px;
+   padding: 5px;
    text-align: center;
    line-height: 2.8ch;
    font-weight: 300;
@@ -295,7 +277,6 @@ aside {
 }
 
 .links > .cardtext {
-   position: absolute;
    position: sticky;
 }
 
@@ -311,12 +292,10 @@ aside {
 }
 
 .rechts > .cardtext {
-   position: absolute;
    position: sticky;
 }
 
 .rechts > img {
-   position: absolute;
    position: sticky;
    width: 300px;
    height: 400px;
