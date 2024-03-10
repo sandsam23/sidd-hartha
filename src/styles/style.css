@@ -272,6 +272,7 @@ aside:empty {
    border: solid 1px #af9e87;
    border-radius: 8px;
    color: #af9e87;
+   box-shadow: 3px 4px 8px 0px rgba(88, 138, 162, 0.3);
    background-color: darkslategrey;
 }
 
