@@ -285,7 +285,7 @@ aside:empty {
 .links {
    display: flex;
    justify-content: center;
-   margin-top: 20px;
+   padding-top: 20px;
 }
 
 .links > .cardtext {
