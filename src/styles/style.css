@@ -159,7 +159,7 @@ p {
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
-   padding: 20px 0;
+   padding: 20px 0 0;
 }
 
 /* die card für 2 Container bild & content */
@@ -249,7 +249,26 @@ p {
    color: #636363;
 }
 
+/*ANCHOR - Wrapper */
+
+.wrapper {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+aside {
+   width: 440px;
+}
+
+/* damit Abstände stimmen */
+aside:empty {
+   padding: 0;
+   margin: 0;
+}
+
+/*ANCHOR - Aside cardtext */
 .cardtext {
+   margin-top: 20px;
    border: solid 1px #af9e87;
    border-radius: 8px;
    color: #af9e87;
@@ -263,35 +282,6 @@ p {
    font-weight: 300;
    font-size: 1.1rem;
 }
-
-/*ANCHOR - Wrapper */
-
-.wrapper {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-aside {
-   width: 440px;
-   padding: 0 20px;
-}
-
-/* damit Abstände stimmen */
-aside:empty {
-   padding: 0;
-   margin: 0;
-}
-
-.links {
-   display: flex;
-   justify-content: center;
-   padding-top: 20px;
-}
-
-.links > .cardtext {
-   position: sticky;
-}
-
 .mitte {
    width: 1040px;
    padding: 20px 20px 0;
@@ -300,11 +290,12 @@ aside:empty {
 
 .rechts {
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   align-items: center;
 }
 
 .rechts > .cardtext {
-   position: sticky;
+   width: 320px;
 }
 
 .rechts > img {
