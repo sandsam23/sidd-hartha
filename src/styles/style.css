@@ -118,7 +118,7 @@ p {
 
 /*ANCHOR - Table of Content mdx */
 
-#toc {
+.toc {
    float: right;
    width: auto;
    margin-top: 50px;
@@ -126,7 +126,7 @@ p {
    margin-bottom: 40px;
 }
 
-#toc {
+.toc {
    padding: 20px;
    font-weight: 300;
    border: solid 1px #af9e87;
@@ -141,10 +141,15 @@ p {
    background-color: #af9e87;
 }
 
-/* toc unsichtbar für handy */
+/* toc für handy */
 @media screen and (max-width: 576px) {
-   #toc {
+   .toc {
       display: none;
+   }
+   .tocwrap {
+      float: none;
+      display: block;
+      margin: 1rem 0;
    }
 }
 
