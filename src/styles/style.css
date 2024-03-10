@@ -276,6 +276,12 @@ aside {
    padding: 0 20px;
 }
 
+/* damit Abstände stimmen */
+aside:empty {
+   padding: 0;
+   margin: 0;
+}
+
 .links {
    display: flex;
    justify-content: center;
