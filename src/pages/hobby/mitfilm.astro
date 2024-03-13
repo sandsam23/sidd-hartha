@@ -7,13 +7,22 @@ import Layout from "../../layouts/Layout.astro";
 <Layout>
    <main class="w-full max-w-[1040px] p-[20px] my-0 mx-auto">
       <SiteImage url="/images/camera-macro.webp" style="margin-bottom:12px" />
-      <h2>mitfilm</h2>
+      <h2>MitFilm</h2>
       <h3>Fotografie</h3>
       <div class="cardContainer">
          <Card
             url1="/images/brett_2.webp"
+            url2="https://www.youtube.com/watch?v=0B3PfH602zo"
+            title1="Gerard Wiener"
+            title2="ein Original"
+            title3="Film"
+            external={true}
+            title4="Mi 13.März 2024"
+         />
+         <Card
+            url1="/images/brett_2.webp"
             url2="https://onfilmlab.de/"
-            title1="onFilmlab"
+            title1="OnFilmLab"
             title2="entwickeln"
             title3="mehr"
             external={true}
@@ -45,6 +54,15 @@ import Layout from "../../layouts/Layout.astro";
             title3="mehr"
             external={true}
             title4="Mo 11.März 2024"
+         />
+         <Card
+            url1="/images/brett_2.webp"
+            url2="../hobby/analoge-kamera"
+            title1="Analoge Foto Kamera"
+            title2="Und wie durch ein Wunder.."
+            title3="mehr"
+            external={false}
+            title4="Mo 01.Januar 2024"
          />
       </div>
    </main>
