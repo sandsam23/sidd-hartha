@@ -7,11 +7,13 @@ export interface Props {
    title3?: string;
    title4?: string;
    style?: string;
+   style2?: string;
    // ? bedeutet, dass die Prop optional ist. external=öffnen in neuem Tab.
    external?: boolean;
 }
 
-const { url1, url2, title1, title2, title3, title4, style, external } = Astro.props;
+const { url1, url2, title1, title2, title3, title4, style, style2, external } =
+   Astro.props;
 ---
 
 <!-- willst du mehr als eine card mußt du diese in einen cardContainer tun
@@ -20,9 +22,13 @@ die Class gibt es in css -->
    <div class="bild"><img src={url1} /></div>
    <div class="content">
       <div class="titel">{title1}</div>
-      <div class="beschreibung">{title2}</div>
+      <div style={style2} class="beschreibung">{title2}</div>
       <div class="button">
-         <a href={url2} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>{title3}</a>
+         <a
+            href={url2}
+            target={external ? "_blank" : undefined}
+            rel={external ? "noopener noreferrer" : undefined}>{title3}</a
+         >
       </div>
       <div class="datum">{title4}</div>
    </div>
