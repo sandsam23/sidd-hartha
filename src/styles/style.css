@@ -285,17 +285,6 @@ aside:empty {
    font-size: 1.1rem;
 }
 
-.links .cardtext > a {
-   padding: 10px;
-   line-height: 1.5ch;
-   font-weight: 300;
-   font-size: 0.9rem;
-}
-
-.links .cardtext {
-   width: 400px;
-}
-
 .links {
    display: flex;
    flex-direction: column;
