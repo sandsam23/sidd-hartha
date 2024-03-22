@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Card from "../../components/Card.astro";
+import CardOhne from "../../components/CardOhne.astro";
 ---
 
 <Layout>
@@ -18,27 +18,24 @@ import Card from "../../components/Card.astro";
          Drei Interviews haben mich spontan angesprochen.<br />
       </p>
       <div class="cardContainer">
-         <Card
-            url1="/images/brett_2.webp"
-            url2="https://www.youtube.com/watch?v=XdcMGxnvoCM"
+         <CardOhne
+            url="https://www.youtube.com/watch?v=XdcMGxnvoCM"
             title1="Roman Huber"
             title2="Leadership"
             title3="Film"
             external={true}
             title4="Mo 29.Januar 2024"
          />
-         <Card
-            url1="/images/brett_2.webp"
-            url2="https://www.youtube.com/watch?v=NNjvoyXeTcY"
+         <CardOhne
+            url="https://www.youtube.com/watch?v=NNjvoyXeTcY"
             title1="Stefan Mandel"
             title2="Der Weg des Kreises"
             title3="Film"
             external={true}
             title4="Mo 29.Januar 2024"
          />
-         <Card
-            url1="/images/brett_2.webp"
-            url2="https://www.youtube.com/watch?v=u9eHZ7J0EUQ"
+         <CardOhne
+            url="https://www.youtube.com/watch?v=u9eHZ7J0EUQ"
             title1="Clinton Callahan"
             title2="Kontext"
             title3="Film"

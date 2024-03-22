@@ -1,5 +1,5 @@
 ---
-import Card from "../../components/Card.astro";
+import CardOhne from "../../components/CardOhne.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -8,18 +8,16 @@ import Layout from "../../layouts/Layout.astro";
       <h2>Krishnamurti</h2>
       <h3>Beenden des Leids</h3>
       <div class="cardContainer">
-         <Card
-            url1="/images/brett_2.webp"
-            url2="/sadsang/der-geist"
+         <CardOhne
+            url="/sadsang/der-geist"
             title1="Gesprächs Auszug"
             title2="Der Geist ist irritiert"
             title3="mehr"
             external={false}
             title4="Fr 8.März 2024"
          />
-         <Card
-            url1="/images/brett_2.webp"
-            url2="/audio/kr_aendern.mp3"
+         <CardOhne
+            url="/audio/kr_aendern.mp3"
             title1="Weisheit"
             title2="Was wird uns ändern?"
             title3="Audio"

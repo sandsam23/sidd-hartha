@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SiteImage from "../components/SiteImage.astro";
-import Card from "../components/Card.astro";
+import CardOhne from "../components/CardOhne.astro";
 ---
 
 <Layout>
@@ -10,46 +10,41 @@ import Card from "../components/Card.astro";
       <section class="mitte">
          <SiteImage url="/images/tools.webp" />
          <div class="cardContainer">
-            <Card
-               url1="/images/brett_2.webp"
-               url2="/hobby/mitfilm"
+            <CardOhne
+               url="/hobby/mitfilm"
                title1="MitFilm"
                title2="Fotografie"
                title3="mehr"
                external={false}
                title4="So 10.März 2024"
             />
-            <Card
+            <CardOhne
                style="background-color: #191919"
-               url1="/images/015_wall.webp"
-               url2="../hobby/lenkdrachen"
+               url="../hobby/lenkdrachen"
                title1="Lenkdrachen"
                title2="Was ist das?"
                title3="mehr"
                external={false}
                title4="Fr 26.Januar 2024"
             />
-            <Card
-               url1="/images/brett_2.webp"
-               url2="https://youtu.be/C97kMKwZ2-g"
+            <CardOhne
+               url="https://youtu.be/C97kMKwZ2-g"
                title1="Theo Jansen"
                title2="Ein Tüftler der es einfach ausprobiert"
                title3="Film"
                external={true}
                title4="Mo 01.Januar 2024"
             />
-            <Card
-               url1="/images/brett_2.webp"
-               url2="https://youtu.be/s4IgI9p23Wo"
+            <CardOhne
+               url="https://youtu.be/s4IgI9p23Wo"
                title1="Luca"
                title2="Ein Modellbau Künstler"
                title3="Film"
                external={true}
                title4="Mo 01.Januar 2024"
             />
-            <Card
-               url1="/images/brett_2.webp"
-               url2="../hobby/erste-webseite"
+            <CardOhne
+               url="../hobby/erste-webseite"
                title1="Meine erste Webseite"
                title2="Warum das geht und was es braucht"
                title3="mehr"
