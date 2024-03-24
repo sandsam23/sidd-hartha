@@ -179,6 +179,10 @@ p {
    background-color: #191919;
 }
 
+.card::-webkit-scrollbar {
+   display: none;
+}
+
 /* Container bild */
 .bild {
    height: 180px;
